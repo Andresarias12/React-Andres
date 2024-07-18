@@ -1,3 +1,8 @@
+body {
+  background-image: url(./images/fondo.avif);
+}
+
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -76,10 +81,7 @@ button:focus-visible {
 .navin{
   justify-content: end;
 }
-.imagen{
-  height: 35vh;
-  margin: 5px;
-}
+
 .padre-imagenes{
   display: flex;
   flex-wrap: wrap;
@@ -93,6 +95,8 @@ button:focus-visible {
   background-color: #e8cfaf;
   
 }
+
+
 .titulo{
   font-size: 40px;
   text-align: center;
@@ -116,15 +120,14 @@ button:focus-visible {
 }
 #navbar2{
   margin-bottom: 30px;
-  margin-right: 25px;
+  
   margin-left: 20px;
 }
 #imagen-nike{
   margin-bottom: 25px;
+ 
 }
-#imagen-nike2{
-  width: 100%;
-}
+
 .titudos{
   background-color: #1a1a1a;
   color: white;
@@ -139,4 +142,27 @@ button:focus-visible {
 }
 .card-title{
   text-align: center;
+}
+.card{
+  margin-bottom: 30px;
+}
+#imgen-nike2{
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.card-precio{
+  font-weight: 700;
+}
+.card-title{
+}
+.precios{
+  display: flex;
+}
+.card-precio2{
+  font-weight: 700;
+}
+.card-precio3{
+  margin-right: 15px;
+  text-decoration: line-through;
+  color: darkgray;
 }

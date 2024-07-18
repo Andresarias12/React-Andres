@@ -1,4 +1,4 @@
-const ItemListContainer = ({ titulo }) => {
+const ItemListContainer = ({ titulo, children}) => {
     return (
         <div className="container">
             <div className="row">
