@@ -1,7 +1,7 @@
 const LeonWidget = () => {
     return (
         <>
-         <img  className="imagenleon" src="./images/leon.png" alt="Leon" />
+         <img  className="imagenleon" src="../public/images/Leon.png" alt="Leon" />
         </>
     )
 }
