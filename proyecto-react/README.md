@@ -1,6 +1,11 @@
-# React + Vite
+# Andres Arias
+## Proyecto Final De React JS
+### Tienda Online (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+
+
+Este proyecto fue creado con React y Vite, Aplicando todos los contenidos vistos.
 
 Currently, two official plugins are available:
 

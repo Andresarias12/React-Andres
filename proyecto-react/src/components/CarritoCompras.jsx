@@ -1,10 +1,9 @@
 import { useContext } from "react"
 import { CartContext } from "./Context"
-import Contador from "./itemCount"
 import { Link } from "react-router-dom"
 
 const Carro = () => {
-    const { removeItem, carrito, carritoVacio, contextProducto, agregarProductoCarrito, totalProductos, sumaProductos } = useContext(CartContext)
+    const { removeItem, carrito, carritoVacio,totalProductos, sumaProductos } = useContext(CartContext)
 
     if (totalProductos() > 0) {
         return (

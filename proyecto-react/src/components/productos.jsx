@@ -3,17 +3,18 @@ import arrayProductos from "../components/json/productos1.json"
 import { Link, useParams } from "react-router-dom"
 import Contador from "./itemCount"
 import NikeExperience from "./NikeExperience"
-import { CartContext } from "./Context"
-import { addDoc, collection, getDocs, getFirestore, query, where } from "firebase/firestore"
+import { collection, getDocs, getFirestore, query, where } from "firebase/firestore"
+import Loading from "./Loading"
 
 
 
 const Productos = () => {
-   
+
 
     const [produ, setProdu] = useState(arrayProductos);
-    const {id} = useParams();
-   
+    const { id } = useParams();
+    const [loading, setLoading] = useState(true)
+
     useEffect(() => {
         const db = getFirestore();
         const itemsCollection = collection(db, "productos");
@@ -49,7 +50,7 @@ const Productos = () => {
 
         })
 
-    },[id])
+    }, [id])
 
 
 
@@ -59,6 +60,7 @@ const Productos = () => {
             <NikeExperience />
             < div className="container m-5" >
                 <div className="row">
+
                     {produ.map(produc => (
 
                         <div key={produc.id} className="col-3">
@@ -82,7 +84,9 @@ const Productos = () => {
 
                     ))}
 
-                    
+
+
+
                 </div>
 
 
